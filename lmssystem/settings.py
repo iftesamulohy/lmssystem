@@ -42,7 +42,9 @@ INSTALLED_APPS = [
     'lms',
     'rest_framework',
     'rest_framework.authtoken',
-    'rest_framework_simplejwt'
+    'rest_framework_simplejwt',
+    'drf_yasg',
+
 ]
 
 MIDDLEWARE = [
@@ -179,3 +181,4 @@ JWT_AUTH = {
     'JWT_PAYLOAD_HANDLER':
     'path.to.jwt_payload_handler',
 }
+REST_FRAMEWORK = { 'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema' }
